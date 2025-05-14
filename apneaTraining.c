@@ -45,6 +45,28 @@ void countdown(int seconds) {
         return;
 }
 
+int read_value(void) {
+	int value = 0;
+	FILE *file;
+
+	file = fopen("data.txt", "r");
+	if (file) {
+		fscanf(file, "%d", &value);
+		fclose(file);
+	}
+	return value;
+}
+
+void write_value(int value) {
+	FILE *file;
+
+	file = fopen("data.txt", "w");
+	if (file) {
+		fprintf(file, "%d", value);
+		fclose(file);
+	}
+}
+
 int main() {
 
         int sec = timeRelaxedPause();
