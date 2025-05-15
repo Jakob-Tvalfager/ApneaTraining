@@ -47,7 +47,7 @@ int read_value(void) {
     int value = 0;
     FILE *file;
 
-    file = fopen("data.txt", "r");
+    file = fopen("relaxedPauseData.txt", "r");
     if (file) {
         fscanf(file, "%d", &value);
         fclose(file);
@@ -58,7 +58,7 @@ int read_value(void) {
 void write_value(int value) {
     FILE *file;
 
-    file = fopen("data.txt", "w");
+    file = fopen("relaxedPauseData.txt", "w");
     if (file) {
         fprintf(file, "%d", value);
         fclose(file);
@@ -74,7 +74,7 @@ void TypeAtraining(){
         if (seconds == 0) {
             indexSwitch = 0;
             seconds = timeRelaxedPause();
-            write_value(seconds); // Fixed: Removed incorrect "int" prefix
+            write_value(seconds);
             printf("read on seconds is %d\n", seconds);
         } else {
             printf("read on null seconds is %d\n", seconds);
