@@ -142,7 +142,6 @@ int main() {
             default:
                 printf("placeholder for same as last time");
                 break;
-
     }
     return 0;
 }
