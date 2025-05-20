@@ -4,11 +4,14 @@ A C program to improve CO2 tolerance for sleep apnea using breath-hold exercises
 
 ## Overview
 
-This project provides a command-line tool to train CO2 tolerance, helping users breathe more steadily to reduce sleep apnea symptoms. It includes two training modes:
-- **Type A**: Fixed breath-hold duration with decreasing rest periods.
-- **Type B**: Increasing breath-hold durations with fixed rest periods.
+This project provides a command-line tool to train CO2 tolerance, helping users breathe more steadily to reduce sleep apnea symptoms. It includes three training modes:
 
-The program measures a "Relaxed Pause" (breath-hold time after exhale) and saves it to `relaxedPauseData.txt` for progress tracking.
+### Training Modes
+1. Type A - Fixed Breath Hold, Decreasing Rest. Short session.
+2. Type B - Increasing Breath Hold, Fixed Rest. Short session.
+3. Type C - Fixed Breath Hold, Fixed Rest, Infinite Loop. Also known as tidal breathing. Can be as long as you want it.
+
+The program measures a "Relaxed Pause" (breath-hold time after exhale) and saves it to `relaxedPauseData.txt` for progress tracking
 
 ## Screenshots
 
@@ -20,17 +23,12 @@ The program measures a "Relaxed Pause" (breath-hold time after exhale) and saves
 ### Running Binaries
 Precompiled binaries are provided in the `bin` folder:
 - Linux: `apnea_linux`
-- Windows: `apnea.exe`
 
 Download the appropriate binary and run:
 - Linux:
   ```bash
   chmod +x bin/apnea_linux
   ./bin/apnea_linux
-  ```
-- Windows:
-  ```cmd
-  bin\apnea.exe
   ```
 
 ### Compilation Instructions
@@ -42,42 +40,17 @@ Download the appropriate binary and run:
    ```
 2. Compile:
    ```bash
-   gcc -Wall -std=c11 apneaTraining.c -o apnea
+   .../ApneaTraining$ gcc -Wall -std=c11 apneaTraining.c -o ./bin/apnea_linux
    ```
 3. Run:
    ```bash
-   ./apnea
+   ./bin/apnea_linux
    ```
-
-#### Windows
-1. Install MinGW (e.g., via MSYS2):
-   ```bash
-   pacman -S mingw-w64-x86_64-gcc
-   ```
-2. Compile:
-   ```cmd
-   gcc -Wall -std=c11 apneaTraining.c -o apnea.exe
-   ```
-3. Run:
-   ```cmd
-   apnea.exe
-   ```
-
-### Training Modes
-Choose a mode:
-- Press `1` for Type A.
-- Press `2` for Type B.
-- Press Enter for the default (last used mode).
 
 ## Requirements
 
-- **Linux**: GCC, POSIX-compliant system (for `unistd.h`, `sleep`)
-- **Windows**: MinGW or compatible C compiler
-- **Binaries**: No additional dependencies
+- **Linux**: GCC, Ubuntu linux has been tested. (Needed for `unistd.h`, `sleep`)
 
 ## Notes
 
-- Ensure WebP images are in the `images` folder or update paths in this README.
-- The program creates and reads from `relaxedPauseData.txt` in the working directory.
-- Use `git rm -r --cached <file>` to remove accidental file commits (e.g., PDFs).
-- Binaries are provided for convenience; compile from source for custom modifications.
+- The program creates and reads from `relaxedPauseData.txt` in the working directory. [todo: use ini file instead]
