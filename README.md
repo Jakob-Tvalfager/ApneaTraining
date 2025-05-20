@@ -8,7 +8,9 @@ This project provides a command-line tool to train CO2 tolerance, helping users 
 
 ### Training Modes
 Type A - Fixed Breath Hold, Decreasing Rest. Short session.
+
 Type B - Increasing Breath Hold, Fixed Rest. Short session.
+
 Type C - Fixed Breath Hold, Fixed Rest, Infinite Loop. Also known as tidal breathing. Can be as long as you want it.
 
 The program measures a "Relaxed Pause" (breath-hold time after exhale) and saves it to `relaxedPauseData.txt` for progress tracking
