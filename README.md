@@ -7,9 +7,9 @@ A C program to improve CO2 tolerance for sleep apnea using breath-hold exercises
 This project provides a command-line tool to train CO2 tolerance, helping users breathe more steadily to reduce sleep apnea symptoms. It includes three training modes:
 
 ### Training Modes
-1. Type A - Fixed Breath Hold, Decreasing Rest. Short session.
-2. Type B - Increasing Breath Hold, Fixed Rest. Short session.
-3. Type C - Fixed Breath Hold, Fixed Rest, Infinite Loop. Also known as tidal breathing. Can be as long as you want it.
+Type A - Fixed Breath Hold, Decreasing Rest. Short session.
+Type B - Increasing Breath Hold, Fixed Rest. Short session.
+Type C - Fixed Breath Hold, Fixed Rest, Infinite Loop. Also known as tidal breathing. Can be as long as you want it.
 
 The program measures a "Relaxed Pause" (breath-hold time after exhale) and saves it to `relaxedPauseData.txt` for progress tracking
 

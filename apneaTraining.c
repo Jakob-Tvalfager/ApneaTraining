@@ -140,7 +140,9 @@ void typeAtraining(void){
                         keepGoing = false;
                 }
         }
-        printf("Done!\n");
+        printf("Done! returning to menu\n");
+        menutext();
+        menulogic();
 }
 
 void typeBtraining(void){
@@ -181,6 +183,9 @@ void typeBtraining(void){
                         keepGoing = false;
                 }
         }
+        printf("Done! returning to menu\n");
+        menutext();
+        menulogic();
 }
 
 void typeCtraining(void){
@@ -228,7 +233,9 @@ void typeCtraining(void){
                 }
         }
 
-        printf("Done!\n");
+        printf("Done! returning to menu\n");
+        menutext();
+        menulogic();
 
 }
 
