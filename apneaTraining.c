@@ -43,7 +43,7 @@ int timerRelaxedPause(void) {
 
         time_t startTime, currentTime;
         int elapsedSeconds;
-        int lastDisplayedSeconds = -1; // Track last displayed time to avoid redundant prints
+        int lastDisplayedSeconds = -1; // Not sure why I did this. Review later.
 
         startTime = time(NULL);
         printf("Running... Press Enter to stop\n");
@@ -53,9 +53,9 @@ int timerRelaxedPause(void) {
         while ((c = getchar()) != '\n' && c != EOF) {
                 currentTime = time(NULL);
                 elapsedSeconds = (int)difftime(currentTime, startTime);
-                if (elapsedSeconds != lastDisplayedSeconds) { // Update only when seconds change
-                printf("\r%03d", elapsedSeconds); // Print 3-digit padded time
-                fflush(stdout); // Ensure immediate display
+                if (elapsedSeconds != lastDisplayedSeconds) { // Update when seconds change
+                printf("\r%03d", elapsedSeconds); // 3-digit padded time
+                fflush(stdout); // immediate display
                 lastDisplayedSeconds = elapsedSeconds;
                 }
         }
