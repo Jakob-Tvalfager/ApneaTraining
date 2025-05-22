@@ -3,6 +3,55 @@
 #include <time.h>     // Timer
 #include <stdbool.h>  // Bool
 
+int deleteRelaxedPauseData(void);
+void typeAtraining(void);
+void typeBtraining(void);
+void typeCtraining(void);
+
+void debugData(){
+        printf("debug on");
+}
+
+void menu_text(void){
+        printf("👉 Pick your training\n");
+        printf("-----------------------------------------------\n");
+        printf("Default (enter) - Same as last time\n");
+        printf("0. Delete last relaxed hold data\n");
+        printf("1. Type A - Fixed Breath Hold, Decreasing Rest\n");
+        printf("2. Type B - Increasing Breath Hold, Fixed Rest\n");
+        printf("3. Type C - Fixed Breath Hold, Fixed Rest, Infinite Loop\n");
+}
+
+void menulogic(void){
+
+        int indexSwitch;
+
+        scanf("%d", &indexSwitch);
+
+        switch (indexSwitch) {
+                case 0:
+                        deleteRelaxedPauseData();
+                        printf("Pick again:");
+                        menulogic();
+                        break;
+                case 1:
+                        typeAtraining();
+                        break;
+                case 2:
+                        typeBtraining();
+                        break;
+                case 3:
+                        typeCtraining();
+                        break;
+                case 99:
+                        debugData();
+                        break;
+                default:
+                        printf("placeholder for same as last time");
+                        break;
+        }
+}
+
 void countdown(int seconds) {
         printf("Countdown from %d seconds:\n", seconds);
         while (seconds > 0) {
@@ -122,26 +171,30 @@ void typeAtraining(void){
         printf("Exhale\n");
         sleep(5);
 
-        bool keepGoing = true;
-        while (keepGoing) {
-                for (int i = 0; i < rounds; i++) {
-                        printf("Round: %d\n", i+1);
-                        printf("Hold exhale\n");
-                        countdown(holdSeconds);
-                        printf("Rest\n");
-                        countdown(restsec);
-                        restsec -= 10;
-                }
-                printf("Continue? (Enter twice to continue, Enter + 'n' to stop): ");
-                int ch;
-                while ((ch = getchar()) != '\n' && ch != EOF); // Clear input buffer
-                ch = getchar();
-                if (ch == 'n' || ch == 'N') {
-                        keepGoing = false;
+        int round = 0;
+        int goAgain = 1;
+
+        while(goAgain==1){
+                for (int i = 0; i <= rounds && goAgain == 1; i++){ //needless goAgain check but paranoid dev be paranoid
+                        for (int i = 0; i < rounds; i++) {
+                                printf("Round: %d\n", i+1);
+                                printf("Hold exhale\n");
+                                countdown(holdSeconds);
+                                printf("Rest\n");
+                                countdown(restsec);
+                                restsec -= 10;
+                        }
+                        if (i == rounds){
+                                printf("Round #%d finished, go again? 1 yes, 0 no\n", round);
+                                goAgain = 1; // sets input buffer for consistent behaviour I think
+                                round++;
+                                scanf("%d", &goAgain);
+                        }
                 }
         }
+
         printf("Done! returning to menu\n");
-        menutext();
+        menu_text();
         menulogic();
 }
 
@@ -184,7 +237,7 @@ void typeBtraining(void){
                 }
         }
         printf("Done! returning to menu\n");
-        menutext();
+        menu_text();
         menulogic();
 }
 
@@ -234,47 +287,11 @@ void typeCtraining(void){
         }
 
         printf("Done! returning to menu\n");
-        menutext();
+        menu_text();
         menulogic();
 
 }
 
-void menutext(void){
-        printf("👉 Pick your training\n");
-        printf("-----------------------------------------------\n");
-        printf("Default (enter) - Same as last time\n");
-        printf("0. Delete last relaxed hold data\n");
-        printf("1. Type A - Fixed Breath Hold, Decreasing Rest\n");
-        printf("2. Type B - Increasing Breath Hold, Fixed Rest\n");
-        printf("3. Type C - Fixed Breath Hold, Fixed Rest, Infinite Loop\n");
-}
-
-void menulogic(void){
-
-        int indexSwitch;
-
-        scanf("%d", &indexSwitch);
-
-        switch (indexSwitch) {
-                case 0:
-                        deleteRelaxedPauseData();
-                        printf("Pick again:");
-                        menulogic();
-                        break;
-                case 1:
-                        typeAtraining();
-                        break;
-                case 2:
-                        typeBtraining();
-                        break;
-                case 3:
-                        typeCtraining();
-                        break;
-                default:
-                        printf("placeholder for same as last time");
-                        break;
-        }
-}
 
 
 int main() {
@@ -297,8 +314,8 @@ int main() {
         printf(" - Low CO2 tolerance = hypersensitive thermostat = fast breathing = airway collapse\n");
         printf(" - High CO2 tolerance = steady thermostat = slow, calm breathing = open airway\n");
 
-        menutext();
-        menulogic();
+        menu_text(); //the repeating text
+        menulogic(); // split off for recursive use. It calls the different exercise logic.
 
         return 0;
 }
