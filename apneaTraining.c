@@ -2,13 +2,45 @@
 #include <unistd.h>   // Sleep
 #include <time.h>     // Timer
 #include <stdbool.h>  // Bool
+#include <stdlib.h> // audio
+
+void debugData(void);
 
 int deleteRelaxedPauseData(void);
+
+int read_value(void);
+void write_value(int value);
+
+int timerRelaxedPause(void);
+int restfulPauseValue();
+
+void countdown(int seconds);
+int change_by_x_percent(int value, int percent);
+void alert(void);
+
+
 void typeAtraining(void);
 void typeBtraining(void);
 void typeCtraining(void);
 
-void debugData(){
+void menu_text(void);
+void menulogic(void);
+
+
+void alertDone(void){
+        system("ffplay -nodisp -autoexit -loglevel quiet audio/complete.oga");
+}
+
+void playBreathein(void){
+        system("ffplay -nodisp -autoexit -loglevel quiet audio/service-login.oga");
+}
+
+void playExhale(void){
+        system("ffplay -nodisp -autoexit -loglevel quiet audio/service-logout.oga");
+}
+
+
+void debugData(void){
         printf("debug on");
 }
 
@@ -63,7 +95,6 @@ void countdown(int seconds) {
         printf("\r");
         printf("Time!\n");
         printf("\a"); // terminal sound if available
-
         return;
 
 }
@@ -179,8 +210,10 @@ void typeAtraining(void){
                         for (int i = 0; i < rounds; i++) {
                                 printf("Round: %d\n", i+1);
                                 printf("Hold exhale\n");
+                                playExhale();
                                 countdown(holdSeconds);
                                 printf("Rest\n");
+                                playBreathein();
                                 countdown(restsec);
                                 restsec -= 10;
                         }
@@ -194,6 +227,7 @@ void typeAtraining(void){
         }
 
         printf("Done! returning to menu\n");
+        alertDone();
         menu_text();
         menulogic();
 }
@@ -224,8 +258,10 @@ void typeBtraining(void){
                         holdSeconds = BreathHoldRoundLengths[i];
                         printf("Round: %d\n", i + 1);
                         printf("Hold exhale\n");
+                        playExhale();
                         countdown(holdSeconds);
                         printf("Rest\n");
+                        playBreathein();
                         countdown(restTimeSeconds);
                 }
                 printf("Continue? (Enter twice to continue, Enter + 'n' to stop): ");
@@ -237,6 +273,7 @@ void typeBtraining(void){
                 }
         }
         printf("Done! returning to menu\n");
+        alertDone();
         menu_text();
         menulogic();
 }
@@ -270,11 +307,14 @@ void typeCtraining(void){
                 for (int i = 0; i < rounds; i++) {
                         printf("Round: %d\n", i+1);
                         printf("Hold exhale\n");
+                        playExhale();
                         countdown(holdSeconds);
                         printf( "Inhale slowly through nose or mouth, normal breath only.\n");
+                        playBreathein();
                         countdown(restsec);
                         printf("Pause 1 second, then exhale normally.\n");
                         printf("Stop exhaling at neutral point.\n");
+                        playExhale();
                         countdown(restsec);
                 }
                 printf("Continue? (Enter twice to continue, Enter + 'n' to stop): ");
@@ -287,6 +327,7 @@ void typeCtraining(void){
         }
 
         printf("Done! returning to menu\n");
+        alertDone();
         menu_text();
         menulogic();
 
