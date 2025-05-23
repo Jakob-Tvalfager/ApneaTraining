@@ -6,14 +6,17 @@
 
 void debugData(void);
 
-int deleteRelaxedPauseData(void);
-
-int read_value(void);
-void write_value(int value);
-
+//
 int timerRelaxedPause(void);
 int restfulPauseValue();
 
+int deleteRelaxedPauseData(void);
+
+// file manipulation functions
+int read_value(void);
+void write_value(int value);
+
+//utilities
 void countdown(int seconds);
 int change_by_x_percent(int value, int percent);
 void alert(void);
@@ -25,6 +28,9 @@ void typeCtraining(void);
 
 void menu_text(void);
 void menulogic(void);
+
+//functions addtodo
+bool keepGoing();
 
 
 void alertDone(void){
