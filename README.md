@@ -26,7 +26,7 @@ Dylan petkus said it best:
 
 | Demo | Description |
 |------|-------------|
-| [![Why CO2 tolerance](https://img.youtube.com/shorts/mwYpIRgKE6M/mqdefault.jpg)](https://www.youtube.com/shorts/mwYpIRgKE6M) | **Quick Overview** - Why C02 tolerance matters |
+| [![Why CO2 tolerance](https://img.youtube.com/vi/mwYpIRgKE6M/mqdefault.jpg)](youtube.com/vi/mwYpIRgKE6M) | **Quick Overview** - Why C02 tolerance matters |
 | [![CO2 tolerance test](https://img.youtube.com/vi/Q602fG-ByKU/mqdefault.jpg)](youtube.com/vi/Q602fG-ByKU) | **Concept** - Introduction to the relaxed pause concept |
 
 
