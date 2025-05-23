@@ -6,23 +6,7 @@ A C program to improve CO2 tolerance for sleep apnea using breath-hold exercises
 
 Dylan petkus said it best:
 
-<div align="center">
-  <a href="https://www.youtube.com/shorts/mwYpIRgKE6M">
-    <img src="https://img.youtube.com/shorts/mwYpIRgKE6M/maxresdefault.jpg" alt="CO2 tolerance" style="width:100%;max-width:600px;">
-  </a>
-  <br>
-  <em>▶️ Click to see his explanation</em>
-</div>
-
-<div align="center">
-  <a href="https://www.youtube.com/shorts/Q602fG-ByKU">
-    <img src="https://img.youtube.com/vi/Q602fG-ByKU/maxresdefault.jpg" alt="CO2 tolerance test" style="width:100%;max-width:600px;">
-  </a>
-  <br>
-  <em>▶️ Click to see his explanation</em>
-</div>
-
-## 📹 Videos & Demos
+## 📹 Videos
 
 | Demo | Description |
 |------|-------------|
