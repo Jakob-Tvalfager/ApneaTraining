@@ -38,6 +38,9 @@ void playBreathein(void){
 void playExhale(void){
         system("ffplay -nodisp -autoexit -loglevel quiet audio/service-logout.oga");
 }
+void playMiddle(){
+        system("ffplay -nodisp -autoexit -loglevel quiet audio/dialog-warning.oga");
+}
 
 
 void debugData(void){

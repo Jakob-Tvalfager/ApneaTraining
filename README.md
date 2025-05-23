@@ -2,6 +2,62 @@
 
 A C program to improve CO2 tolerance for sleep apnea using breath-hold exercises adapted from freediving CO2 tables.
 
+# Why train CO2 tolerance to beat sleep apnea?
+
+Dylan petkus said it best:
+
+<div align="center">
+  <a href="https://www.youtube.com/shorts/mwYpIRgKE6M">
+    <img src="https://www.youtube.com/shorts/mwYpIRgKE6M/maxresdefault.jpg" alt="CO2 tolerance" style="width:100%;max-width:600px;">
+  </a>
+  <br>
+  <em>▶️ Click to see his explanation</em>
+</div>
+
+<div align="center">
+  <a href="https://www.youtube.com/shorts/Q602fG-ByKU">
+    <img src="https://img.youtube.com/vi/Q602fG-ByKU/maxresdefault.jpg" alt="CO2 tolerance test" style="width:100%;max-width:600px;">
+  </a>
+  <br>
+  <em>▶️ Click to see his explanation</em>
+</div>
+
+
+Cheers to Dylan for inspiring me to make this!
+
+## 🚀 Try It Now - No Installation Required!
+
+### Option 1: GitHub Codespaces (Full Featured)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jakob-Tvalfager/apneatraining)
+
+Get a complete development environment with full terminal access.
+
+### Option 2: Gitpod (Quick Start)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/jakob-Tvalfager/apneatraining)
+
+One-click setup with automatic compilation.
+
+### Option 3: Replit (Simplest)
+[![Run on Repl.it](https://replit.com/badge/github/jakob-Tvalfager/apneatraining)](https://replit.com/new/github/jakob-Tvalfager/apneatraining)
+
+Instant access with no setup required.
+
+---
+
+**Note:** Audio files (`audio/complete.oga`, etc.) may not work in browser environments, but all core breathing training functionality will work perfectly.
+
+### Quick Start Instructions for Cloud Environments:
+1. Click any button above
+2. Wait for the environment to load
+3. In the terminal, run: `./apneaTraining`
+4. Follow the on-screen prompts
+
+If the program isn't compiled yet, run:
+```bash
+gcc -o apneaTraining apneaTraining.c
+./apneaTraining
+
+
 ## Overview
 
 This project provides a command-line tool to train CO2 tolerance, helping users breathe more steadily to reduce sleep apnea symptoms. It includes three training modes:
