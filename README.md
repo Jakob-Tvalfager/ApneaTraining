@@ -8,7 +8,7 @@ Dylan petkus said it best:
 
 <div align="center">
   <a href="https://www.youtube.com/shorts/mwYpIRgKE6M">
-    <img src="https://www.youtube.com/shorts/mwYpIRgKE6M/maxresdefault.jpg" alt="CO2 tolerance" style="width:100%;max-width:600px;">
+    <img src="https://img.youtube.com/shorts/mwYpIRgKE6M/maxresdefault.jpg" alt="CO2 tolerance" style="width:100%;max-width:600px;">
   </a>
   <br>
   <em>▶️ Click to see his explanation</em>
@@ -21,6 +21,13 @@ Dylan petkus said it best:
   <br>
   <em>▶️ Click to see his explanation</em>
 </div>
+
+## 📹 Videos & Demos
+
+| Demo | Description |
+|------|-------------|
+| [![Why CO2 tolerance](https://img.youtube.com/shorts/mwYpIRgKE6M/mqdefault.jpg)](https://www.youtube.com/shorts/mwYpIRgKE6M) | **Quick Overview** - Why C02 tolerance matters |
+| [![CO2 tolerance test](https://img.youtube.com/vi/Q602fG-ByKU/mqdefault.jpg)](youtube.com/vi/Q602fG-ByKU) | **Concept** - Introduction to the relaxed pause concept |
 
 
 Cheers to Dylan for inspiring me to make this!
