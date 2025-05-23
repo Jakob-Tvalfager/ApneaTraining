@@ -16,7 +16,7 @@ Dylan petkus said it best:
 
 Cheers to Dylan for inspiring me to make this!
 
-## 🚀 Try It Now - No Installation Required!
+## 🚀 Try It online (Untested, I'll see if I can get something better later)
 
 ### Option 1: GitHub Codespaces (Full Featured)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jakob-Tvalfager/apneatraining)
