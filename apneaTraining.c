@@ -6,7 +6,7 @@
 
 void debugData(void);
 
-//
+//misc?
 int timerRelaxedPause(void);
 int restfulPauseValue();
 
@@ -29,9 +29,31 @@ void typeCtraining(void);
 void menu_text(void);
 void menulogic(void);
 
-//functions addtodo
-bool keepGoing();
+int main() {
+        printf("The CO2 Breathing Breakthrough Guide\n");
+        printf("====================================\n");
+        printf("Reset Your Breathing Thermostat to Improve Sleep Apnea Naturally\n\n");
 
+        printf("🔍 Why CO2 Tolerance Matters\n");
+        printf("----------------------------\n");
+        printf("Many with sleep apnea hyperventilate—breathing too fast and shallowly, especially during sleep. This:\n");
+        printf(" - Lowers carbon dioxide (CO2) levels\n");
+        printf(" - Triggers unstable breathing patterns\n");
+        printf(" - Leads to airway collapse at night\n");
+        printf("👉 Solution: Increase CO2 tolerance to breathe slowly and steadily, even asleep.\n");
+        printf("Use CO2 tables, adapted from freediving, for sleep health.\n\n");
+
+        printf("🧠 The Core Idea: Reset Your Breathing Thermostat\n");
+        printf("-------------------------------Leverages----------------\n");
+        printf("CO2 tolerance is like a thermostat for breathing:\n");
+        printf(" - Low CO2 tolerance = hypersensitive thermostat = fast breathing = airway collapse\n");
+        printf(" - High CO2 tolerance = steady thermostat = slow, calm breathing = open airway\n");
+
+        menu_text(); //the repeating text
+        menulogic(); // split off for recursive use. It calls the different exercise logic.
+
+        return 0;
+}
 
 void alertDone(void){
         system("ffplay -nodisp -autoexit -loglevel quiet audio/complete.oga");
@@ -340,32 +362,4 @@ void typeCtraining(void){
         menu_text();
         menulogic();
 
-}
-
-
-
-int main() {
-        printf("The CO2 Breathing Breakthrough Guide\n");
-        printf("====================================\n");
-        printf("Reset Your Breathing Thermostat to Improve Sleep Apnea Naturally\n\n");
-
-        printf("🔍 Why CO2 Tolerance Matters\n");
-        printf("----------------------------\n");
-        printf("Many with sleep apnea hyperventilate—breathing too fast and shallowly, especially during sleep. This:\n");
-        printf(" - Lowers carbon dioxide (CO2) levels\n");
-        printf(" - Triggers unstable breathing patterns\n");
-        printf(" - Leads to airway collapse at night\n");
-        printf("👉 Solution: Increase CO2 tolerance to breathe slowly and steadily, even asleep.\n");
-        printf("Use CO2 tables, adapted from freediving, for sleep health.\n\n");
-
-        printf("🧠 The Core Idea: Reset Your Breathing Thermostat\n");
-        printf("-------------------------------Leverages----------------\n");
-        printf("CO2 tolerance is like a thermostat for breathing:\n");
-        printf(" - Low CO2 tolerance = hypersensitive thermostat = fast breathing = airway collapse\n");
-        printf(" - High CO2 tolerance = steady thermostat = slow, calm breathing = open airway\n");
-
-        menu_text(); //the repeating text
-        menulogic(); // split off for recursive use. It calls the different exercise logic.
-
-        return 0;
 }
