@@ -17,7 +17,7 @@ through worsening CO2 tolerance](https://img.youtube.com/vi/D_7Azhtol1U/mqdefaul
 
 Cheers to Dylan for inspiring me to make this!
 
-## 🚀 Try It online
+## 💨 Try It online
 
 ### GitHub Codespaces (Full Featured)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jakob-Tvalfager/apneatraining)
