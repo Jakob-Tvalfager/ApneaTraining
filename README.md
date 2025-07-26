@@ -12,8 +12,7 @@ Dylan petkus said it best:
 |------|-------------|
 | [![Why CO2 tolerance](https://img.youtube.com/vi/mwYpIRgKE6M/mqdefault.jpg)](youtube.com/vi/mwYpIRgKE6M) | **Quick Overview** - Why C02 tolerance matters |
 | [![CO2 tolerance test](https://img.youtube.com/vi/Q602fG-ByKU/mqdefault.jpg)](youtube.com/vi/Q602fG-ByKU) | **Concept** - Introduction to the relaxed pause concept |
-| [![How a CPAP Makes Sleep Apnea Worse
-through worsening CO2 tolerance](https://img.youtube.com/vi/D_7Azhtol1U/mqdefault.jpg)](youtube.com/vi/D_7Azhtol1U) |  |
+| [![How a CPAP Makes Sleep Apnea Worse through worsening CO2 tolerance](https://img.youtube.com/vi/D_7Azhtol1U/mqdefault.jpg)](youtube.com/vi/D_7Azhtol1U) |  |
 
 Cheers to Dylan for inspiring me to make this!
 
