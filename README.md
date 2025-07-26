@@ -17,38 +17,21 @@ through worsening CO2 tolerance](https://img.youtube.com/vi/D_7Azhtol1U/mqdefaul
 
 Cheers to Dylan for inspiring me to make this!
 
-## 🚀 Try It online (Untested, I'll see if I can get something better later)
+## 🚀 Try It online
 
-### Option 1: GitHub Codespaces (Full Featured)
+### GitHub Codespaces (Full Featured)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jakob-Tvalfager/apneatraining)
 
 Get a complete development environment with full terminal access.
 
-### Option 2: Gitpod (Quick Start)
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/jakob-Tvalfager/apneatraining)
-
-One-click setup with automatic compilation.
-
-### Option 3: Replit (Simplest)
-[![Run on Repl.it](https://replit.com/badge/github/jakob-Tvalfager/apneatraining)](https://replit.com/new/github/jakob-Tvalfager/apneatraining)
-
-Instant access with no setup required.
-
 ---
 
-**Note:** Audio files (`audio/complete.oga`, etc.) may not work in browser environments, but all core breathing training functionality will work perfectly.
+If there is no compiled binary you can
 
-### Quick Start Instructions for Cloud Environments:
-1. Click any button above
-2. Wait for the environment to load
-3. In the terminal, run: `./apneaTraining`
-4. Follow the on-screen prompts
-
-If the program isn't compiled yet, run:
+Compile it, run:
 ```bash
 gcc -o apneaTraining apneaTraining.c
 ./apneaTraining
-
 
 ## Overview
 
@@ -108,3 +91,4 @@ Download the appropriate binary and run:
 ## sources
 
 Audio effects: https://pixabay.com/sound-effects/
+Newer versions will use a recording.
