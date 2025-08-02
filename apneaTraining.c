@@ -9,7 +9,6 @@ void debugData(void);
 //misc?
 int timerRelaxedPause(void);
 int restfulPauseValue();
-
 int deleteRelaxedPauseData(void);
 
 // file manipulation functions
@@ -60,11 +59,11 @@ void alertDone(void){
 }
 
 void playBreathein(void){
-        system("ffplay -nodisp -autoexit -loglevel quiet audio/service-login.oga");
+        system("ffplay -nodisp -autoexit -loglevel quiet audio/Inhale_and_rest.mp3");
 }
 
 void playExhale(void){
-        system("ffplay -nodisp -autoexit -loglevel quiet audio/service-logout.oga");
+        system("ffplay -nodisp -autoexit -loglevel quiet audio/Exhale.mp3");
 }
 void playMiddle(){
         system("ffplay -nodisp -autoexit -loglevel quiet audio/dialog-warning.oga");
