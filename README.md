@@ -1,3 +1,13 @@
+## Update
+
+Remade it into a phone friendly static webpage
+
+https://jakob-tvalfager.github.io/testpage/
+
+<img width="970" height="587" alt="image" src="https://github.com/user-attachments/assets/9b3c6b06-65b4-44d6-95a1-f0639ba074a2" />
+
+New repo is: https://github.com/Jakob-Tvalfager/testpage
+
 # ApneaTraining
 
 A C program to improve CO2 tolerance for sleep apnea using breath-hold exercises adapted from freediving CO2 tables.
